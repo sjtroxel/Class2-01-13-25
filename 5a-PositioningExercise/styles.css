@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 20px auto;
+    border: 1px solid black;
+  }
+  
+  .box {
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid blue;
+  }
+  
+  .box1 {
+    position: static; /* Default value */
+  }
+  
+  .box2 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 20px auto;
+    border: 1px solid black;
+  }
+  
+  .box {
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid blue;
+  }
+  
+  .box1 {
+    position: static; /* Default value */
+  }
+  
+  .box2 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .box3 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .box4 {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+  }
+  
+  

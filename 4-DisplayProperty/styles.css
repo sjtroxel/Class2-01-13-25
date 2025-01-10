@@ -1,0 +1,30 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .box {
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+    border: 1px solid blue;
+  }
+  
+  .box {
+    display: inline-block;
+    width: 100px; /* Adding a fixed width for better visualization */
+  }
+  
+  .box3 {
+    display: block;
+    width: 200px;
+  }
+
+  .box4 {
+    display: inline;
+    width: 3000px; /* Question, why isn't it changing the box size when I change it from 100px to 300px to even 3000px - it is staying the same?? */
+  }
+
+  .box5 {
+    display: block;
+  }
