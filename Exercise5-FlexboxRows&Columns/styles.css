@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+.flexbox {
+    height: 1100px;
+    width: 850px;
+    padding: 3px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: baseline; */
+    background-color: lightgrey;
+    border: 5px solid black;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+  }
+
+.box {
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+    border: 3px solid blue;
+    height: 150px;
+    width: 150px;
+  }
+
+.box3 {
+  align-content: flex-end;
+}
+
+.box5 {
+    text-align: right;
+    align-content: center;
+}

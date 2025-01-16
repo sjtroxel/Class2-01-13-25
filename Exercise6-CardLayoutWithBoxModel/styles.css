@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: lightsteelblue;
+  }
+  
+.tabletop {
+    height: 600px;
+    width: 600px;
+    padding: 8px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: baseline; */
+    background-color: green;
+    border: 35px solid brown;
+    flex-direction: row;
+    align-items: center;
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    border-radius: 400px;
+  }
+
+.cards {
+    padding: 8px;
+    margin: 8px;
+    background-color: whitesmoke;
+    border: 5px solid goldenrod;
+    height: 105px;
+    width: 75px;
+    border-radius: 8px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+
+
+.hearts, .diamonds {
+    color: red;
+}
+
+.suit {
+    background-color: whitesmoke;
+    justify-content: center;
+    align-content: center;
+}
+
+.top-left {
+    text-align: left;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.bottom-right {
+    text-align: right;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
