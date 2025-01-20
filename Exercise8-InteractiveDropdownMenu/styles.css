@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #000;
+    /* font-size: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 1.6; */
+    /* letter-spacing: 0.2rem; */
+    color: snow;
+}
+
+body {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, main {
+    width: 100%;
+}
+
+header {
+    height: 100px;
+    background-color: firebrick;
+    display: flex;
+    justify-content: flex-start;
+}
+
+main {
+    flex-grow: 1;
+    background-color: wheat;
+    color: crimson;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-break {
+    display: block;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    padding: 1em;
+    font-weight: bolder;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.nav {
+    padding-top: 40px;
+}
+
+.hamburger {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 200px);
+    color: lime;
+    background-color: purple;
+}
+
+.menu {
+    visibility: hidden;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: bottom; */
+    z-index: auto;
+    height: 100px;
+}
+
+.hamburger:focus + .menu,
+.menu:hover {
+    visibility: visible;
+    /* background-color: white; */
+}
+
+.menuItem  {
+    width: 150px;
+    height: 100px;
+    padding: 0.5em 0.5em;
+    outline: none;
+    position: relative;
+    background-color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.subMenu {
+    width: 80px;
+    height: 110px;
+    font-size: 12px;
+    visibility: hidden;
+    list-style-type: none;
+    position: absolute;
+    top: 85%;
+    left: -60%;
+    /* background-color: midnightblue; */
+    color: chartreuse;
+    /* box-shadow: 2px 2px 2px #333; */
+    z-index: 1;
+}
+
+.subLevel {
+    top: 55%;
+    z-index: 1;
+}
+
+.subItem {
+    width: 100%;
+    min-width: 150px;
+    padding: 1em 1em;
+    background-color: #333;
+    font-size: 10px;
+    outline: none;
+    position: relative;
+    transition: background-color 0.3 ease-in-out;
+}
+
+.hamburger:hover,
+.hamburger:focus,
+.menuItem:hover,
+.menuItem:focus,
+.subItem:hover,
+.subItem:focus,
+.subItem:focus-within {
+    /* background-color: #fff; */
+    color: yellow;
+}
+
+.subItem:hover > a,
+.subItem:focus > a,
+a:focus {
+    color: #000;
+    font-size: 120%;
+}
+
+.menuItem:hover > .subMenu,
+.menuItem:focus > .subMenu,
+.menuItem:focus-within > .subMenu,
+.subItem:hover > .subMenu,
+.subItem:focus > .subMenu,
+.subItem:focus-within > .subMenu {
+  visibility: visible;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 1rem;
+    }
+    .nav {
+        padding-top: 0;
+        flex-grow: 1;
+    }
+    .title {
+        flex-grow: 0;
+    }
+    .mobile-break {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        visibility: visible;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    /* .menu:hover, .menu-focus {
+        background-color: midnightblue; */
+    }
