@@ -40,7 +40,7 @@ main {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 a {
@@ -74,9 +74,10 @@ a {
     height: 100px;
     position: absolute;
     top: 0;
-    left: calc(100% - 200px);
+    left: calc(100% - 100px);
     color: lime;
-    background-color: purple;
+    font-size: 32px;
+    background-color: indigo;
 }
 
 .menu {
@@ -119,7 +120,7 @@ a {
     top: 85%;
     left: -60%;
     /* background-color: midnightblue; */
-    color: chartreuse;
+    color: lightsteelblue;
     /* box-shadow: 2px 2px 2px #333; */
     z-index: 1;
 }
@@ -147,7 +148,7 @@ a {
 .subItem:hover,
 .subItem:focus,
 .subItem:focus-within {
-    /* background-color: #fff; */
+    background-color: midnightblue;
     color: yellow;
 }
 
@@ -169,7 +170,7 @@ a:focus {
 
 @media only screen and (min-width: 768px) {
     h1 {
-        font-size: 1rem;
+        font-size: 20px;
     }
     .nav {
         padding-top: 0;
@@ -189,6 +190,22 @@ a:focus {
         flex-direction: row;
         justify-content: flex-end;
     }
-    /* .menu:hover, .menu-focus {
-        background-color: midnightblue; */
+    .menu:hover, .menu-focus {
+        background-color: midnightblue;
     }
+}
+
+.skip-link {
+    position: absolute;
+    top: -999px;
+    left: 0;
+    background-color: white;
+    padding: 0.5rem;
+    z-index: 1;
+    color: #000;
+}
+
+.skip-link:focus, .skip-link:hover {
+    top: auto;
+    left: auto;
+}
